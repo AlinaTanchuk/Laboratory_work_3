@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\git hub\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\git hub\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\variant15form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant15form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\git hub\\laboratory_work_3\\statanalyzer\\statanalyzer\\services\\variant15dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\services\\variant15dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 397,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +34,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Variant15Form.Designer.cs",
+              "DocumentMoniker": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant15Form.Designer.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant15Form.Designer.cs",
+              "ToolTip": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant15Form.Designer.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant15Form.Designer.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAYwJcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T18:51:25.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Variant15Form.cs",
+              "DocumentMoniker": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant15Form.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant15Form.cs",
+              "ToolTip": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant15Form.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant15Form.cs",
+              "ViewState": "AgIAAK8AAAAAAAAAAADwv74AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T18:50:59.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Variant15DataService.cs",
               "DocumentMoniker": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant15DataService.cs",
               "RelativeDocumentMoniker": "StatAnalyzer\\Services\\Variant15DataService.cs",
@@ -39,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DiseaseRecord.cs",
               "DocumentMoniker": "D:\\Git Hub\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Models\\DiseaseRecord.cs",
               "RelativeDocumentMoniker": "StatAnalyzer\\Models\\DiseaseRecord.cs",
