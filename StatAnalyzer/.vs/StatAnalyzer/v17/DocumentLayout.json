@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,8 +38,7 @@
               "RelativeToolTip": "StatAnalyzer\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:11:20.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T14:11:20.098Z"
             },
             {
               "$type": "Document",
@@ -50,18 +49,17 @@
               "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "StatAnalyzer\\Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:10:33.776Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2026-04-30T14:10:33.776Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\MainForm.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\MainForm.cs",
-              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\MainForm.cs",
-              "RelativeToolTip": "StatAnalyzer\\MainForm.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAuwIkAAAAfAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\MainForm.cs",
+              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T14:09:50.432Z",
               "EditorCaption": ""
