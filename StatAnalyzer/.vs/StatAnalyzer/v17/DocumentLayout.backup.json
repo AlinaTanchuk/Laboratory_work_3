@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "StatAnalyzer\\Services\\Variant9DataService.cs",
               "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant9DataService.cs",
               "RelativeToolTip": "StatAnalyzer\\Services\\Variant9DataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T17:28:26.497Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "StatAnalyzer\\Models\\HousingRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T17:26:29.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-02T17:26:29.036Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "StatAnalyzer\\Forms\\MainForm.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:09:50.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T14:09:50.432Z"
             }
           ]
         }

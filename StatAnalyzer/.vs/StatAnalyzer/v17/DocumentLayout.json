@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\services\\variant9dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,14 +40,14 @@
               "RelativeDocumentMoniker": "StatAnalyzer\\Services\\Variant9DataService.cs",
               "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant9DataService.cs",
               "RelativeToolTip": "StatAnalyzer\\Services\\Variant9DataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-02T17:28:26.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HousingRecord.cs",
               "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Models\\HousingRecord.cs",
               "RelativeDocumentMoniker": "StatAnalyzer\\Models\\HousingRecord.cs",
@@ -60,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\MainForm.cs",
