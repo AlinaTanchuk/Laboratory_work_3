@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\services\\variant9dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\services\\variant9dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\variant9form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant9form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\variant9form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant9form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,40 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Variant9DataService.cs",
-              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant9DataService.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\Services\\Variant9DataService.cs",
-              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant9DataService.cs",
-              "RelativeToolTip": "StatAnalyzer\\Services\\Variant9DataService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
+              "Title": "Variant9Form.cs",
+              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant9Form.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant9Form.cs",
+              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant9Form.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant9Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T17:28:26.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HousingRecord.cs",
-              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Models\\HousingRecord.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\Models\\HousingRecord.cs",
-              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Models\\HousingRecord.cs",
-              "RelativeToolTip": "StatAnalyzer\\Models\\HousingRecord.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-02T17:26:29.036Z",
+              "WhenOpened": "2026-05-02T18:07:49.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
-              "RelativeToolTip": "StatAnalyzer\\Forms\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Title": "Variant9Form.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant9Form.Designer.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant9Form.Designer.cs",
+              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant9Form.Designer.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant9Form.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:09:50.432Z",
+              "WhenOpened": "2026-05-02T18:07:55.628Z",
               "EditorCaption": ""
             }
           ]
