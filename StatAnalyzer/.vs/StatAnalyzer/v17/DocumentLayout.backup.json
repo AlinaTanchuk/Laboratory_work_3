@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\",
+  "WorkspaceRootPath": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\services\\variant9dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\services\\variant9dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\models\\housingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|c:\\users\\venda\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,73 +22,54 @@
       "DocumentGroups": [
         {
           "DockedHeight": 397,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Program.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\Program.cs",
-              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Program.cs",
-              "RelativeToolTip": "StatAnalyzer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:11:20.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Variant15Form.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\Variant15Form.cs",
-              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "StatAnalyzer\\Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:10:33.776Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Variant9DataService.cs",
+              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant9DataService.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Services\\Variant9DataService.cs",
+              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Services\\Variant9DataService.cs",
+              "RelativeToolTip": "StatAnalyzer\\Services\\Variant9DataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T17:28:26.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HousingRecord.cs",
+              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Models\\HousingRecord.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Models\\HousingRecord.cs",
+              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Models\\HousingRecord.cs",
+              "RelativeToolTip": "StatAnalyzer\\Models\\HousingRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T17:26:29.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\MainForm.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\MainForm.cs",
-              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\MainForm.cs",
-              "RelativeToolTip": "StatAnalyzer\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAYAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\venda\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\papochka\\\u0443\u0447\u0435\u0431\u043A\u0430\\\u0443\u043F\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-30T14:09:50.432Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 58,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

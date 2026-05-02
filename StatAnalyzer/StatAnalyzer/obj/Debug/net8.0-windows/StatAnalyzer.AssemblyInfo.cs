@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StatAnalyzer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af85f39d931f631e333397d2fbdbb4d5535cbd1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9add3ee8fa456ddf7110a0ae26bbfa2a18051e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("StatAnalyzer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StatAnalyzer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

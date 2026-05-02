@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JfhOTg/9N6E=",
+  "dgSpecHash": "sYGBb9RSGh0=",
   "success": true,
-  "projectFilePath": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\StatAnalyzer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\venda\\OneDrive\\Рабочий стол\\papochka\\учебка\\уп\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\StatAnalyzer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\venda\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512",
+    "C:\\Users\\venda\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\venda\\.nuget\\packages\\oxyplot.windowsforms\\2.2.0\\oxyplot.windowsforms.2.2.0.nupkg.sha512"
+  ],
   "logs": []
 }
