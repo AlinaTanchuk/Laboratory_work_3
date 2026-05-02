@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kYRDjScoRSU=",
+  "dgSpecHash": "IY4E5HDdqRw=",
   "success": true,
   "projectFilePath": "C:\\main\\GitHubRepositories\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\StatAnalyzer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\zkoch\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\zkoch\\.nuget\\packages\\oxyplot.windowsforms\\2.2.0\\oxyplot.windowsforms.2.2.0.nupkg.sha512"
+  ],
   "logs": []
 }
