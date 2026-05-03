@@ -17,73 +17,83 @@
 
         private void InitializeComponent()
         {
-            this.headerPanel = new System.Windows.Forms.Panel();
-            this.titleLabel = new System.Windows.Forms.Label();
-            this.subtitleLabel = new System.Windows.Forms.Label();
-            this.buttonsPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.headerPanel.SuspendLayout();
-            this.SuspendLayout();
-
+            headerPanel = new Panel();
+            titleLabel = new Label();
+            subtitleLabel = new Label();
+            buttonsPanel = new TableLayoutPanel();
+            headerPanel.SuspendLayout();
+            SuspendLayout();
+            // 
             // headerPanel
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(34, 87, 169);
-            this.headerPanel.Controls.Add(this.titleLabel);
-            this.headerPanel.Controls.Add(this.subtitleLabel);
-            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.Location = new System.Drawing.Point(0, 0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Padding = new System.Windows.Forms.Padding(30, 15, 30, 15);
-            this.headerPanel.Size = new System.Drawing.Size(784, 110);
-            this.headerPanel.TabIndex = 0;
-
+            // 
+            headerPanel.BackColor = Color.FromArgb(34, 87, 169);
+            headerPanel.Controls.Add(titleLabel);
+            headerPanel.Controls.Add(subtitleLabel);
+            headerPanel.Dock = DockStyle.Top;
+            headerPanel.Location = new Point(0, 0);
+            headerPanel.Margin = new Padding(4, 5, 4, 5);
+            headerPanel.Name = "headerPanel";
+            headerPanel.Padding = new Padding(43, 25, 43, 25);
+            headerPanel.Size = new Size(1151, 183);
+            headerPanel.TabIndex = 0;
+            // 
             // titleLabel
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
-            this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(30, 18);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(224, 41);
-            this.titleLabel.TabIndex = 0;
-            this.titleLabel.Text = "📊 Статистический анализ данных России";
-
+            // 
+            titleLabel.AutoSize = true;
+            titleLabel.Font = new Font("Segoe UI", 22F, FontStyle.Bold);
+            titleLabel.ForeColor = Color.White;
+            titleLabel.Location = new Point(43, 30);
+            titleLabel.Margin = new Padding(4, 0, 4, 0);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(937, 60);
+            titleLabel.TabIndex = 0;
+            titleLabel.Text = "📊 Статистический анализ данных России";
+            // 
             // subtitleLabel
-            this.subtitleLabel.AutoSize = true;
-            this.subtitleLabel.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.subtitleLabel.ForeColor = System.Drawing.Color.FromArgb(180, 210, 255);
-            this.subtitleLabel.Location = new System.Drawing.Point(32, 62);
-            this.subtitleLabel.Name = "subtitleLabel";
-            this.subtitleLabel.Size = new System.Drawing.Size(262, 19);
-            this.subtitleLabel.TabIndex = 1;
-            this.subtitleLabel.Text = "Свежая ежегодная статистика";
-
+            // 
+            subtitleLabel.AutoSize = true;
+            subtitleLabel.Font = new Font("Segoe UI", 10F);
+            subtitleLabel.ForeColor = Color.FromArgb(180, 210, 255);
+            subtitleLabel.Location = new Point(46, 103);
+            subtitleLabel.Margin = new Padding(4, 0, 4, 0);
+            subtitleLabel.Name = "subtitleLabel";
+            subtitleLabel.Size = new Size(284, 28);
+            subtitleLabel.TabIndex = 1;
+            subtitleLabel.Text = "Свежая ежегодная статистика";
+            // 
             // buttonsPanel
-            this.buttonsPanel.ColumnCount = 2;
-            this.buttonsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.buttonsPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.buttonsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buttonsPanel.Location = new System.Drawing.Point(0, 110);
-            this.buttonsPanel.Name = "buttonsPanel";
-            this.buttonsPanel.Padding = new System.Windows.Forms.Padding(40, 30, 40, 30);
-            this.buttonsPanel.RowCount = 2;
-            this.buttonsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.buttonsPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.buttonsPanel.Size = new System.Drawing.Size(784, 451);
-            this.buttonsPanel.TabIndex = 1;
-
+            // 
+            buttonsPanel.ColumnCount = 2;
+            buttonsPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            buttonsPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            buttonsPanel.Dock = DockStyle.Fill;
+            buttonsPanel.Location = new Point(0, 183);
+            buttonsPanel.Margin = new Padding(4, 5, 4, 5);
+            buttonsPanel.Name = "buttonsPanel";
+            buttonsPanel.Padding = new Padding(57, 50, 57, 50);
+            buttonsPanel.RowCount = 2;
+            buttonsPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            buttonsPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            buttonsPanel.Size = new Size(1151, 752);
+            buttonsPanel.TabIndex = 1;
+            // 
             // MainForm
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(245, 247, 250);
-            this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.buttonsPanel);
-            this.Controls.Add(this.headerPanel);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.MinimumSize = new System.Drawing.Size(700, 500);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Статистический анализатор";
-            this.headerPanel.ResumeLayout(false);
-            this.headerPanel.PerformLayout();
-            this.ResumeLayout(false);
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(245, 247, 250);
+            ClientSize = new Size(1151, 935);
+            Controls.Add(buttonsPanel);
+            Controls.Add(headerPanel);
+            Font = new Font("Segoe UI", 9F);
+            Margin = new Padding(4, 5, 4, 5);
+            MinimumSize = new Size(1173, 796);
+            Name = "MainForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Статистический анализатор";
+            headerPanel.ResumeLayout(false);
+            headerPanel.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
