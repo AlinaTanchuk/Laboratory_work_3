@@ -14,10 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
->>>>>>> dev
     <PackageReference Include="OxyPlot.Core" Version="2.2.0" />
     <PackageReference Include="OxyPlot.WindowsForms" Version="2.2.0" />
   </ItemGroup>

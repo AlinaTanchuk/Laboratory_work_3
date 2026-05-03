@@ -38,6 +38,7 @@ namespace StatAnalyzer.Forms
                     PopulateGrid();
                     BuildMainChart();
                     UpdateStats();
+                    nudWindow.Maximum = _records.Count;
                 }
                 catch (Exception ex)
                 {
@@ -65,7 +66,7 @@ namespace StatAnalyzer.Forms
         {
             var model = new PlotModel
             {
-                Title = "Медианная заработная плата (мужчины vs женщины)",
+                Title = "Медианная заработная плата (руб.)",
                 Background = OxyColors.White
             };
 
@@ -76,15 +77,28 @@ namespace StatAnalyzer.Forms
                 LegendOrientation = LegendOrientation.Vertical
             });
 
-            model.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Title = "Год", MajorGridlineStyle = LineStyle.Dot });
-            model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Title = "Зарплата (руб.)", MajorGridlineStyle = LineStyle.Dot });
+            model.Axes.Add(new LinearAxis
+            {
+                Position = AxisPosition.Bottom,
+                Title = "Год",
+                MajorGridlineStyle = LineStyle.Dot,
+                MajorStep = 1,
+                MinorStep = 1
+            });
+
+            model.Axes.Add(new LinearAxis
+            {
+                Position = AxisPosition.Left,
+                Title = "Зарплата (руб.)",
+                MajorGridlineStyle = LineStyle.Dot
+            });
 
             var maleSeries = new LineSeries
             {
                 Title = "Мужчины",
                 Color = OxyColor.FromRgb(52, 152, 219),
                 MarkerType = MarkerType.Circle,
-                MarkerSize = 5,
+                MarkerSize = 4,
                 StrokeThickness = 2
             };
             var femaleSeries = new LineSeries
@@ -92,7 +106,7 @@ namespace StatAnalyzer.Forms
                 Title = "Женщины",
                 Color = OxyColor.FromRgb(231, 76, 60),
                 MarkerType = MarkerType.Square,
-                MarkerSize = 5,
+                MarkerSize = 4,
                 StrokeThickness = 2
             };
 
@@ -119,33 +133,58 @@ namespace StatAnalyzer.Forms
             int windowSize = (int)nudWindow.Value;
             int steps = (int)nudForecastSteps.Value;
 
-            var values = _records.OrderBy(x => x.Year).Select(x => x.GetPrimaryValue()).ToList();
-            var forecast = _service.CalculateMovingAverageForecast(values, windowSize, steps);
+            if (windowSize > _records.Count)
+            {
+                MessageBox.Show(
+                    $"Размер окна N={windowSize} не может превышать число наблюдений ({_records.Count}).",
+                    "Неверный параметр", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var sorted = _records.OrderBy(x => x.Year).ToList();
+            int lastYear = sorted.Last().Year;
+
+            var maleValues = sorted.Select(x => x.MaleSalary).ToList();
+            var femaleValues = sorted.Select(x => x.FemaleSalary).ToList();
+
+            var maleForecast = _service.CalculateMovingAverageForecast(maleValues, windowSize, steps);
+            var femaleForecast = _service.CalculateMovingAverageForecast(femaleValues, windowSize, steps);
 
             var model = plotView.Model;
-            int lastYear = _records.Max(x => x.Year);
+            ExportHelper.RemoveSeriesByTitle(model, "Прогноз");
 
-            var forecastSeries = new LineSeries
+            var maleForecastSeries = new LineSeries
             {
-                Title = "Прогноз (общий)",
-                Color = OxyColor.FromRgb(155, 89, 182),
+                Title = "Прогноз (мужчины)",
+                Color = OxyColor.FromRgb(52, 152, 219),
+                LineStyle = LineStyle.Dash,
                 MarkerType = MarkerType.Triangle,
-                MarkerSize = 5,
-                StrokeThickness = 2,
-                LineStyle = LineStyle.Dash
+                StrokeThickness = 2
             };
 
-            for (int i = 0; i < forecast.Count; i++)
-                forecastSeries.Points.Add(new DataPoint(lastYear + i + 1, forecast[i]));
+            var femaleForecastSeries = new LineSeries
+            {
+                Title = "Прогноз (женщины)",
+                Color = OxyColor.FromRgb(231, 76, 60),
+                LineStyle = LineStyle.Dash,
+                MarkerType = MarkerType.Triangle,
+                StrokeThickness = 2
+            };
 
-            model.Series.Add(forecastSeries);
+            for (int i = 0; i < maleForecast.Count; i++)
+            {
+                maleForecastSeries.Points.Add(new DataPoint(lastYear + i + 1, maleForecast[i]));
+                femaleForecastSeries.Points.Add(new DataPoint(lastYear + i + 1, femaleForecast[i]));
+            }
+
+            model.Series.Add(maleForecastSeries);
+            model.Series.Add(femaleForecastSeries);
             model.InvalidatePlot(true);
         }
 
         private void BtnExport_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Экспорт будет реализован в следующей версии.", "Не реализовано",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ExportHelper.ExportChart(plotView.Model, "salary_chart");
         }
 
         private void UpdateStats()
@@ -157,10 +196,10 @@ namespace StatAnalyzer.Forms
                     $"📊 Статистика:\n\n" +
                     $"Мужчины:\n" +
                     $"  Макс. рост: {stats.maleMax:+0.00;-0.00}%\n  ({stats.maleMaxYear})\n" +
-                    $"  Макс. падение: {stats.maleMin:+0.00;-0.00}%\n  ({stats.maleMinYear})\n\n" +
+                    $"  Мин. рост: {stats.maleMin:+0.00;-0.00}%\n  ({stats.maleMinYear})\n\n" +
                     $"Женщины:\n" +
                     $"  Макс. рост: {stats.femaleMax:+0.00;-0.00}%\n  ({stats.femaleMaxYear})\n" +
-                    $"  Макс. падение: {stats.femaleMin:+0.00;-0.00}%\n  ({stats.femaleMinYear})";
+                    $"  Мин. рост: {stats.femaleMin:+0.00;-0.00}%\n  ({stats.femaleMinYear})";
             }
             catch (Exception ex)
             {
