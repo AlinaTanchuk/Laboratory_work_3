@@ -79,7 +79,7 @@ namespace StatAnalyzer.Forms
                 Background = OxyColors.White
             };
 
-            var xAxis = new LinearAxis { Position = AxisPosition.Bottom, Title = "Год", MajorGridlineStyle = LineStyle.Dot};
+            var xAxis = new LinearAxis { Position = AxisPosition.Bottom, Title = "Год", MajorGridlineStyle = LineStyle.Dot };
             var yAxis = new LinearAxis { Position = AxisPosition.Left, Title = "Население (млн чел.)", MajorGridlineStyle = LineStyle.Dot };
             model.Axes.Add(xAxis);
             model.Axes.Add(yAxis);
@@ -90,8 +90,7 @@ namespace StatAnalyzer.Forms
                 Color = OxyColor.FromRgb(52, 152, 219),
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 5,
-                StrokeThickness = 2,
-                CanTrackerInterpolatePoints = false
+                StrokeThickness = 2
             };
 
             foreach (var r in _records.OrderBy(x => x.Year))
@@ -113,27 +112,13 @@ namespace StatAnalyzer.Forms
             int windowSize = (int)nudWindow.Value;
             int steps = (int)nudForecastSteps.Value;
 
-            // ИСПРАВЛЕНИЕ: проверка windowsSize
-            if (windowSize > _records.Count)
-            {
-                MessageBox.Show(
-                    $"Размер окна N={windowSize} не может превышать число наблюдений ({_records.Count}).\n" +
-                    $"Уменьшите значение N.",
-                    "Неверный параметр", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            var sorted = _records.OrderBy(x => x.Year).ToList();
-
-            // ИСПРАВЛЕНИЕ: берём реальный последний год из данных, не инициализируем нулем
-            int lastYear = sorted.Last().Year;
-
             var values = _records.OrderBy(x => x.Year).Select(x => x.Population).ToList();
             var forecast = _service.CalculateMovingAverageForecast(values, windowSize, steps);
 
             var model = plotView.Model;
-
             // Удаляем предыдущий прогноз, если был
+            // model.Series.RemoveAll(s => s.Title == "Прогноз");
+
             var toRemove = model.Series.Where(s => s.Title == "Прогноз").ToList();
             foreach (var item in toRemove)
                 model.Series.Remove(item);
@@ -148,6 +133,7 @@ namespace StatAnalyzer.Forms
                 LineStyle = LineStyle.Dash
             };
 
+            int lastYear = 0;
             for (int i = 0; i < forecast.Count; i++)
                 forecastSeries.Points.Add(new DataPoint(lastYear + i + 1, forecast[i]));
 
@@ -155,10 +141,11 @@ namespace StatAnalyzer.Forms
             model.InvalidatePlot(true);
         }
 
-        // ИСПРАВЛЕНИЕ: экспорт реализован
         private void BtnExport_Click(object sender, EventArgs e)
         {
-            ExportHelper.ExportChart(plotView.Model, "population_chart");
+
+            MessageBox.Show("Экспорт будет реализован в следующей версии.", "Не реализовано",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void UpdateStats()
