@@ -31,6 +31,22 @@ namespace StatAnalyzer.Forms
             return new PlotModel { Title = "Инфекционные заболевания", Background = OxyColors.White };
         }
 
+        private void PopulateDiseaseCombo()
+        {
+            cmbDisease.Items.Clear();
+            var diseases = _records.Select(r => r.DiseaseName).Distinct().OrderBy(x => x).ToList();
+            foreach (var d in diseases)
+                cmbDisease.Items.Add(d);
+            if (cmbDisease.Items.Count > 0)
+                cmbDisease.SelectedIndex = 0;
+
+            // Обновляем максимум окна по минимальному числу лет среди болезней
+            int minCount = _records.GroupBy(r => r.DiseaseName)
+                                   .Min(g => g.Count());
+            nudWindow.Maximum = minCount;
+        }
+
+
         private void BtnLoad_Click(object sender, EventArgs e)
         {
             using (var dlg = new OpenFileDialog { Filter = "JSON файлы (*.json)|*.json" })
@@ -43,6 +59,7 @@ namespace StatAnalyzer.Forms
                     PopulateGrid();
                     BuildMainChart();
                     UpdateStats();
+                    PopulateDiseaseCombo();
                 }
                 catch (Exception ex)
                 {
@@ -124,7 +141,15 @@ namespace StatAnalyzer.Forms
             }
 
 
-            string selectedDisease = _records.GroupBy(r => r.DiseaseName).First().Key;
+            //string selectedDisease = _records.GroupBy(r => r.DiseaseName).First().Key;
+            if (cmbDisease.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите болезнь для прогноза.", "Нет выбора",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string selectedDisease = cmbDisease.SelectedItem.ToString();
 
             int windowSize = (int)nudWindow.Value;
             int steps = (int)nudForecastSteps.Value;
@@ -167,8 +192,7 @@ namespace StatAnalyzer.Forms
 
         private void BtnExport_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Экспорт будет реализован в следующей версии.", "Не реализовано",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ExportHelper.ExportChart(plotView.Model, "disease_chart");
         }
 
         private void UpdateStats()
