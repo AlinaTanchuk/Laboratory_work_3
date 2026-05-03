@@ -17,7 +17,7 @@ namespace StatAnalyzer
         {
             // Наполнение карточек
             buttonsPanel.Controls.Add(CreateModuleCard(
-                "👥 Численность населения России",
+                "👥 Численность населения России ",
                 "Вариант 5",
                 "Анализ за 15 лет: прирост, убыль,\nпрогноз методом скользящей средней",
                 Color.FromArgb(52, 152, 219),
@@ -60,12 +60,12 @@ namespace StatAnalyzer
             };
 
             // Тень через рамку
-            card.Paint += (s, e) =>
-            {
-                var rect = new Rectangle(0, 0, card.Width - 1, card.Height - 1);
-                using (var pen = new Pen(Color.FromArgb(220, 225, 235), 1))
-                    e.Graphics.DrawRectangle(pen, rect);
-            };
+            //card.Paint += (s, e) =>
+            //{
+            //    var rect = new Rectangle(0, 0, card.Width - 1, card.Height - 1);
+            //    using (var pen = new Pen(Color.FromArgb(220, 225, 235), 1))
+            //        e.Graphics.DrawRectangle(pen, rect);
+            //};
 
             // Цветная полоса слева
             var accent = new Panel
@@ -87,7 +87,7 @@ namespace StatAnalyzer
                 Text = title,
                 Font = new Font("Segoe UI", 13f, FontStyle.Bold),
                 ForeColor = accentColor,
-                Height = 28,
+                Height = 40,
                 Dock = DockStyle.Top,
                 AutoSize = false
             };
@@ -96,8 +96,8 @@ namespace StatAnalyzer
             {
                 Text = subtitle,
                 Font = new Font("Segoe UI", 9f, FontStyle.Bold),
-                ForeColor = Color.FromArgb(60, 60, 60),
-                Height = 22,
+                ForeColor = Color.FromArgb(90, 90, 90),
+                Height = 28,
                 Dock = DockStyle.Top,
                 AutoSize = false
             };
@@ -122,6 +122,11 @@ namespace StatAnalyzer
                 Font = new Font("Segoe UI", 9f, FontStyle.Bold),
                 Cursor = Cursors.Hand
             };
+
+            content.Click += onClick;
+            lblTitle.Click += onClick;
+            lblDesc.Click += onClick;
+            lblSubtitle.Click += onClick;
 
             btnOpen.FlatAppearance.BorderSize = 0;
             btnOpen.Click += onClick;
