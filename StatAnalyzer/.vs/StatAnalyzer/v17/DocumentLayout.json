@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\variant5form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant5form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\statanalyzer\\forms\\variant5form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant5form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\variant5form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\variant5form.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|d:\\githubrepos\\laboratory_work_3\\statanalyzer\\statanalyzer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45CD649D-D99D-4B40-BF8A-544B0B183409}|StatAnalyzer\\StatAnalyzer.csproj|solutionrelative:statanalyzer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:statanalyzer\\variant15form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,44 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Variant5Form.Designer.cs",
+              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant5Form.Designer.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant5Form.Designer.cs",
+              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant5Form.Designer.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant5Form.Designer.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAIAwwNIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:50:37.883Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Variant5Form.cs [Design]",
+              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant5Form.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant5Form.cs",
+              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant5Form.cs [Design]",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant5Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:50:29Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Variant5Form.cs",
+              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant5Form.cs",
+              "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\Variant5Form.cs",
+              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\Variant5Form.cs",
+              "RelativeToolTip": "StatAnalyzer\\Forms\\Variant5Form.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswJ0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T10:20:35.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Program.cs",
               "RelativeDocumentMoniker": "StatAnalyzer\\Program.cs",
@@ -42,27 +87,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Variant15Form.cs",
-              "RelativeDocumentMoniker": "StatAnalyzer\\Variant15Form.cs",
-              "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "StatAnalyzer\\Variant15Form.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:10:33.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainForm.cs",
               "DocumentMoniker": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "StatAnalyzer\\Forms\\MainForm.cs",
               "ToolTip": "D:\\GitHubRepos\\Laboratory_work_3\\StatAnalyzer\\StatAnalyzer\\Forms\\MainForm.cs",
               "RelativeToolTip": "StatAnalyzer\\Forms\\MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-30T14:09:50.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-30T14:09:50.432Z"
             }
           ]
         },
