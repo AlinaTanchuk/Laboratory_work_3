@@ -26,11 +26,13 @@ namespace StatAnalyzer
             InitializeComponent();
         }
 
+        // Создаёт пустой график с белым фоном и заголовком
         private PlotModel CreateEmptyPlot()
         {
             return new PlotModel { Title = "Цены на первичное жильё", Background = OxyColors.White };
         }
 
+        // Загружает данные из JSON файла, заполняет таблицу и строит график
         private void BtnLoad_Click(object sender, EventArgs e)
         {
             using (var dlg = new OpenFileDialog { Filter = "JSON файлы (*.json)|*.json" })
@@ -43,6 +45,7 @@ namespace StatAnalyzer
                     BuildMainChart();
                     UpdateStats();
 
+                    // Настраиваем максимальное значение для окна
                     int maxN = _records.Count;
                     nudWindow.Maximum = maxN;
                     if (nudWindow.Value > maxN)
@@ -56,6 +59,7 @@ namespace StatAnalyzer
             }
         }
 
+        // Отображает загруженные данные в таблице: год и цены по типам квартир
         private void PopulateGrid()
         {
             dgv.DataSource = null;
@@ -74,6 +78,7 @@ namespace StatAnalyzer
                     r.Price3Room.ToString("N0"));
         }
 
+        // Рисует основной график с тремя линиями для разных типов квартир
         private void BuildMainChart()
         {
             var model = new PlotModel
@@ -82,13 +87,16 @@ namespace StatAnalyzer
                 Background = OxyColors.White
             };
 
+            // Настраиваем оси: год снизу, цена слева
             model.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Title = "Год", MajorGridlineStyle = LineStyle.Dot });
             model.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Title = "Цена (руб./м²)", MajorGridlineStyle = LineStyle.Dot });
 
+            // Создаём три линии с разными цветами и маркерами
             var s1 = new LineSeries { Title = "1-комнатные", Color = OxyColor.FromRgb(52, 152, 219), MarkerType = MarkerType.Circle, MarkerSize = 4, StrokeThickness = 2 };
             var s2 = new LineSeries { Title = "2-комнатные", Color = OxyColor.FromRgb(46, 204, 113), MarkerType = MarkerType.Square, MarkerSize = 4, StrokeThickness = 2 };
             var s3 = new LineSeries { Title = "3-комнатные", Color = OxyColor.FromRgb(155, 89, 182), MarkerType = MarkerType.Triangle, MarkerSize = 4, StrokeThickness = 2 };
 
+            // Добавляем точки для каждого года
             foreach (var r in _records.OrderBy(x => x.Year))
             {
                 s1.Points.Add(new DataPoint(r.Year, r.Price1Room));
@@ -102,6 +110,7 @@ namespace StatAnalyzer
             plotView.Model = model;
         }
 
+        // Строит прогноз цен методом скользящей средней на указанное количество шагов
         private void BtnForecast_Click(object sender, EventArgs e)
         {
             if (_records == null || _records.Count == 0)
@@ -115,9 +124,8 @@ namespace StatAnalyzer
             int steps = (int)nudForecastSteps.Value;
 
             var model = plotView.Model;
-            var toRemove = model.Series
-        .Where(s => s.Title != null && s.Title.Contains("Прогноз"))
-        .ToList();
+            // Удаляем старые прогнозы, чтобы не накладывались друг на друга
+            var toRemove = model.Series.Where(s => s.Title != null && s.Title.Contains("Прогноз")).ToList();
 
             foreach (var s in toRemove)
             {
@@ -126,14 +134,17 @@ namespace StatAnalyzer
 
             int lastYear = _records.Max(x => x.Year);
 
+            // Извлекаем данные для каждого типа квартир
             var values1 = _records.OrderBy(x => x.Year).Select(x => x.Price1Room).ToList();
             var values2 = _records.OrderBy(x => x.Year).Select(x => x.Price2Room).ToList();
             var values3 = _records.OrderBy(x => x.Year).Select(x => x.Price3Room).ToList();
 
+            // Рассчитываем прогнозы
             var forecast1 = _service.CalculateMovingAverageForecast(values1, windowSize, steps);
             var forecast2 = _service.CalculateMovingAverageForecast(values2, windowSize, steps);
             var forecast3 = _service.CalculateMovingAverageForecast(values3, windowSize, steps);
 
+            // Создаём пунктирные линии для прогнозов
             var fs1 = new LineSeries
             {
                 Title = "Прогноз 1-комн.",
@@ -161,6 +172,7 @@ namespace StatAnalyzer
                 MarkerSize = 4,
                 StrokeThickness = 2
             };
+            // Добавляем точки прогноза для каждого будущего года
             for (int i = 0; i < steps; i++)
             {
                 double x = lastYear + i + 1;
@@ -174,11 +186,13 @@ namespace StatAnalyzer
             model.InvalidatePlot(true);
         }
 
+        // Экспортирует текущий график в файл
         private void BtnExport_Click(object sender, EventArgs e)
         {
             ExportHelper.ExportChart(plotView.Model, "housing_chart");
         }
 
+        // Обновляет статистику
         private void UpdateStats()
         {
             try
