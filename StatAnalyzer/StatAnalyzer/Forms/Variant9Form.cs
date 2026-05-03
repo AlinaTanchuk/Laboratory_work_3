@@ -42,6 +42,11 @@ namespace StatAnalyzer
                     PopulateGrid();
                     BuildMainChart();
                     UpdateStats();
+
+                    int maxN = _records.Count;
+                    nudWindow.Maximum = maxN;
+                    if (nudWindow.Value > maxN)
+                        nudWindow.Value = maxN;
                 }
                 catch (Exception ex)
                 {
@@ -122,7 +127,12 @@ namespace StatAnalyzer
             int lastYear = _records.Max(x => x.Year);
 
             var values1 = _records.OrderBy(x => x.Year).Select(x => x.Price1Room).ToList();
+            var values2 = _records.OrderBy(x => x.Year).Select(x => x.Price2Room).ToList();
+            var values3 = _records.OrderBy(x => x.Year).Select(x => x.Price3Room).ToList();
+
             var forecast1 = _service.CalculateMovingAverageForecast(values1, windowSize, steps);
+            var forecast2 = _service.CalculateMovingAverageForecast(values2, windowSize, steps);
+            var forecast3 = _service.CalculateMovingAverageForecast(values3, windowSize, steps);
 
             var fs1 = new LineSeries
             {
@@ -133,17 +143,40 @@ namespace StatAnalyzer
                 MarkerSize = 4,
                 StrokeThickness = 2
             };
-            for (int i = 0; i < forecast1.Count; i++)
-                fs1.Points.Add(new DataPoint(lastYear + i + 1, forecast1[i]));
-
+            var fs2 = new LineSeries
+            {
+                Title = "Прогноз 2-комн.",
+                Color = OxyColor.FromRgb(46, 204, 113),
+                LineStyle = LineStyle.Dash,
+                MarkerType = MarkerType.Circle,
+                MarkerSize = 4,
+                StrokeThickness = 2
+            };
+            var fs3 = new LineSeries
+            {
+                Title = "Прогноз 3-комн.",
+                Color = OxyColor.FromRgb(155, 89, 182),
+                LineStyle = LineStyle.Dash,
+                MarkerType = MarkerType.Circle,
+                MarkerSize = 4,
+                StrokeThickness = 2
+            };
+            for (int i = 0; i < steps; i++)
+            {
+                double x = lastYear + i + 1;
+                fs1.Points.Add(new DataPoint(x, forecast1[i]));
+                fs2.Points.Add(new DataPoint(x, forecast2[i]));
+                fs3.Points.Add(new DataPoint(x, forecast3[i]));
+            }
             model.Series.Add(fs1);
+            model.Series.Add(fs2);
+            model.Series.Add(fs3);
             model.InvalidatePlot(true);
         }
 
         private void BtnExport_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Экспорт не реализован", "Экспорт",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ExportHelper.ExportChart(plotView.Model, "housing_chart");
         }
 
         private void UpdateStats()
@@ -153,8 +186,8 @@ namespace StatAnalyzer
                 var stats = _service.CalculatePriceChangeStats(_records);
                 lblStats.Text =
                     $"📊 Статистика:\n\n" +
-                    $"Сильнее всего\nподорожали:\n  {stats.mostExpensive}\n  (+{stats.maxGrowthPct:0.0}%)\n\n" +
-                    $"Сильнее всего\nподешевели:\n  {stats.mostCheap}\n  ({stats.maxDropPct:+0.0;-0.0}%)";
+                    $"Сильнее всего подорожали:\n  {stats.mostExpensive}  (+{stats.maxGrowthPct:0.0}%)\n\n" +
+                    $"Сильнее всего подешевели:\n  {stats.mostCheap}  ({stats.maxDropPct:+0.0;-0.0}%)";
             }
             catch (Exception ex)
             {

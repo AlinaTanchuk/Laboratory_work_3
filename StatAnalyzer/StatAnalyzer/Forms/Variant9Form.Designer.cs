@@ -77,8 +77,8 @@ namespace StatAnalyzer
 
             lblStats = new Label
             {
-                Location = new Point(15, y),
-                Size = new Size(195, 220),
+                Location = new Point(15, 319),
+                Size = new Size(200, 220),
                 Font = new Font("Segoe UI", 8.5f),
                 ForeColor = Color.FromArgb(60, 60, 60),
                 Text = "Загрузите файл для отображения статистики."
